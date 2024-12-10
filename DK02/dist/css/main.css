@@ -1,0 +1,526 @@
+@font-face {
+  font-family: or;
+  src: url("../fonts/Orbitron-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: Eczar;
+  src: url("../fonts/Eczar-VariableFont_wght.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 280px) {
+  html {
+    font-size: 50%;
+  }
+}
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 75%;
+  }
+}
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 90%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  html {
+    font-size: 90%;
+  }
+}
+@media screen and (min-width: 1280px) {
+  html {
+    font-size: 100%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  /* Styles for medium to large desktops */
+  html {
+    font-size: 130%;
+  }
+}
+@media screen and (min-width: 1920px) {
+  html {
+    font-size: 130%;
+  }
+}
+body {
+  height: 100dvh !important;
+  width: 100vw !important;
+  overflow: hidden;
+  background-image: url("./image/greenBackground.png");
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.landingPage {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+.landingPage-left {
+  height: 100dvh;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 2vw;
+  position: relative;
+  padding: 5%;
+  line-height: 1;
+}
+@media (min-width: 1280px) {
+  .landingPage-left {
+    padding: 3%;
+    padding-bottom: 2%;
+    gap: 1vw;
+  }
+}
+@media (max-width: 1280px) {
+  .landingPage-left {
+    padding: 3%;
+    gap: 1vw;
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 992px) {
+  .landingPage-left {
+    gap: 3vw;
+  }
+}
+@media screen and (min-width: 1024px) and (min-height: 1366px) {
+  .landingPage-left {
+    justify-content: center;
+    gap: 3vw;
+    border: 2px solid red;
+  }
+}
+@media (max-width: 992px) {
+  .landingPage-left {
+    width: 100%;
+    justify-content: flex-end;
+    padding: 1.6rem;
+    padding-bottom: 15%;
+  }
+}
+@media (max-width: 475px) {
+  .landingPage-left {
+    width: 100vw;
+    gap: 3vw;
+  }
+}
+@media (max-width: 415px) {
+  .landingPage-left {
+    padding-bottom: 7%;
+  }
+}
+@media (max-width: 321px) {
+  .landingPage-left {
+    padding-bottom: 5%;
+  }
+}
+.landingPage-left img {
+  height: 30%;
+}
+@media (max-width: 475px) {
+  .landingPage-left img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+@media (max-width: 415px) {
+  .landingPage-left img {
+    height: 25%;
+  }
+}
+@media (max-width: 375px) {
+  .landingPage-left img {
+    height: 150px;
+  }
+}
+@media (max-width: 321px) {
+  .landingPage-left img {
+    height: 20%;
+  }
+}
+.landingPage-left h1 {
+  border-top: 1px dashed #000;
+  border-bottom: 1px dashed #000;
+  padding: 1.3vw;
+  padding-top: 0.5vw;
+  font-family: or;
+  font-weight: 900;
+  font-size: 4rem;
+}
+@media (max-width: 992px) {
+  .landingPage-left h1 {
+    font-size: 3rem;
+    padding: 3vw;
+  }
+}
+@media (max-width: 321px) {
+  .landingPage-left h1 {
+    font-size: 2rem;
+  }
+}
+.landingPage-left p,
+.landingPage-left .subtitle {
+  font-family: Eczar;
+  color: #fff;
+  font-weight: 400;
+  text-align: center;
+  line-height: 1.5;
+  font-size: 1.1rem;
+}
+@media (max-width: 992px) {
+  .landingPage-left p,
+  .landingPage-left .subtitle {
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 992px) {
+  .landingPage-left p,
+  .landingPage-left .subtitle {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 500px) {
+  .landingPage-left p,
+  .landingPage-left .subtitle {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 414px) {
+  .landingPage-left p,
+  .landingPage-left .subtitle {
+    line-height: 1.3;
+  }
+}
+@media (max-width: 375px) {
+  .landingPage-left p,
+  .landingPage-left .subtitle {
+    width: 95%;
+    font-size: 1rem;
+  }
+}
+@media (max-width: 321px) {
+  .landingPage-left p,
+  .landingPage-left .subtitle {
+    font-size: 0.9rem;
+  }
+}
+.landingPage-left .subtitle {
+  display: none;
+}
+.landingPage-left #yesButton {
+  min-width: 4.4rem;
+  min-height: 4.4rem;
+  padding: 1vw;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9af42;
+  font-family: or;
+  font-weight: 800;
+  color: black;
+  cursor: pointer;
+}
+@media (max-width: 992px) {
+  .landingPage-left #yesButton {
+    height: 6rem;
+    padding: 0.5rem 0.8rem;
+    font-size: 1rem;
+  }
+}
+@media (max-width: 475px) {
+  .landingPage-left #yesButton {
+    height: 4.5rem;
+    font-size: 1rem;
+  }
+}
+@media (max-width: 321px) {
+  .landingPage-left #yesButton {
+    font-size: 1rem;
+  }
+}
+.landingPage-left #yesButton p {
+  color: #fff;
+  font-family: or;
+  font-weight: 900;
+  font-size: 1rem;
+}
+.landingPage-left .landingPage-top-left-olderThan-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.landingPage-left .landingPage-top-left-olderThan-buttons-continue {
+  height: 4rem;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1d1d1d;
+  font-weight: 900;
+  font-family: or;
+  font-size: 1.3rem;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+@media (max-width: 992px) {
+  .landingPage-left .landingPage-top-left-olderThan-buttons-continue {
+    font-size: 1.7rem;
+  }
+}
+@media (max-width: 321px) {
+  .landingPage-left .landingPage-top-left-olderThan-buttons-continue {
+    font-size: 1rem;
+  }
+}
+.landingPage-left .landingPage-top-left-olderThan-buttons-continue p {
+  color: #fff;
+  font-family: or;
+  font-weight: 900;
+}
+.landingPage-left #noButton {
+  min-width: 4.4rem;
+  min-height: 4.4rem;
+  border-radius: 50%;
+  text-align: center;
+  text-decoration: none;
+  text-align: center;
+  display: flex;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9af42;
+  font-family: or;
+  font-size: 1rem;
+  font-weight: 900;
+  cursor: pointer;
+  color: #1d1d1d;
+}
+@media (max-width: 992px) {
+  .landingPage-left #noButton {
+    width: 6rem;
+    height: 6rem;
+    padding: 0.5rem 0.8rem;
+    font-size: 1rem;
+  }
+}
+@media (max-width: 475px) {
+  .landingPage-left #noButton {
+    width: 4.5rem;
+    height: 4.5rem;
+    font-size: 1rem;
+  }
+}
+@media (max-width: 321px) {
+  .landingPage-left #noButton {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 321px) {
+  .landingPage-left #noButton {
+    font-size: 1rem;
+  }
+}
+.landingPage-left #noButton p {
+  font-family: or;
+  font-weight: 900;
+  font-size: 1rem;
+}
+.landingPage-middle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 3px dashed #000;
+  border-radius: 0;
+  height: 80vh;
+}
+@media (max-width: 475px) {
+  .landingPage-middle {
+    display: none;
+  }
+}
+@media (max-width: 992px) {
+  .landingPage-middle {
+    display: none;
+  }
+}
+.landingPage-right {
+  background-image: url(./image/desktopRightImage.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 50%;
+}
+@media screen and (width: 1024px) and (height: 1366px) {
+  .landingPage-right {
+    background-size: contain;
+    background-position: center;
+  }
+}
+@media (max-width: 475px) {
+  .landingPage-right {
+    display: none;
+  }
+}
+@media (max-width: 917px) {
+  .landingPage-right {
+    display: none;
+  }
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+@media (max-width: 992px) {
+  .btn-container {
+    width: 50vh;
+  }
+}
+
+#checkBoxList {
+  font-family: Eczar;
+  font-weight: 400;
+  width: 100%;
+  display: flex;
+  margin-top: 8px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 1rem;
+  column-gap: 20px;
+  padding-left: 7%;
+  padding-right: 7%;
+  font-size: 1.1rem;
+}
+@media (max-width: 992px) {
+  #checkBoxList {
+    font-size: 1.8rem;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  #checkBoxList {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 1280px) {
+  #checkBoxList {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+@media (max-width: 475px) {
+  #checkBoxList {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 375px) {
+  #checkBoxList {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 321px) {
+  #checkBoxList {
+    font-size: 1.1rem;
+  }
+}
+#checkBoxList p {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+@media (max-width:991.98px) {
+  #checkBoxList p {
+    font-size: 20px;
+  }
+}
+@media (min-width:1400px) {
+  #checkBoxList p {
+    font-size: 24px;
+  }
+}
+#checkBoxList div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  column-gap: 8px;
+  cursor: pointer;
+}
+@media (min-width:1400px) {
+  #checkBoxList div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+  }
+}
+@media (max-width:991.98px) {
+  #checkBoxList div {
+    column-gap: 5px;
+  }
+}
+#checkBoxList div input {
+  margin-top: 3px;
+  display: none;
+}
+#checkBoxList div .customCheckboxQuestion {
+  height: 1.1rem;
+  width: 1.1rem;
+  border-radius: 50%;
+  border: 2px solid black;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+@media (max-width: 475px) {
+  #checkBoxList div .customCheckboxQuestion {
+    height: 1.4rem;
+    min-width: 1.4rem;
+  }
+}
+#checkBoxList div .customCheckboxQuestion img {
+  scale: 0;
+  opacity: 0;
+  height: 1rem;
+  width: 1.25rem;
+}
+@media (max-width:991.98px) {
+  #checkBoxList div .customCheckboxQuestion img {
+    height: 13px;
+    width: 13px;
+  }
+}
+#checkBoxList div .customCheckboxQuestion_input:checked + .customCheckboxQuestion img {
+  opacity: 1;
+  scale: 0.65;
+  color: #f7c5c5;
+  color: black;
+}/*# sourceMappingURL=main.css.map */
